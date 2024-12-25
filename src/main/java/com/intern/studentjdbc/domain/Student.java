@@ -1,14 +1,16 @@
 package com.intern.studentjdbc.domain;
 
+
+@SuppressWarnings("unused")
 public class Student {
-    private Integer studentId;
+    private Long studentId;
     private String firstName;
     private String lastName;
     private String studentNumber;
     private String userName;
     private String password;
 
-    public Student(Integer studentId, String firstName, String lastName, String studentNumber, String userName, String password) {
+    public Student(Long studentId, String firstName, String lastName, String studentNumber, String userName, String password) {
         this.studentId = studentId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -17,11 +19,11 @@ public class Student {
         this.password = password;
     }
 
-    public Integer getStudentId() {
+    public Long getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(Integer studentId) {
+    public void setStudentId(Long studentId) {
         this.studentId = studentId;
     }
 
