@@ -5,12 +5,10 @@ package com.intern.studentjdbc.domain;
 public class Course {
     private Long courseId;
     private String courseName;
-    private Student[] students;
 
-    public Course(Long courseId, String courseName, Student[] students) {
+    public Course(Long courseId, String courseName) {
         this.courseId = courseId;
         this.courseName = courseName;
-        this.students = students;
     }
 
     public Long getCourseId() {
@@ -27,13 +25,5 @@ public class Course {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
-    }
-
-    public Student[] getStudents() {
-        return students;
-    }
-
-    public void setStudents(Student[] students) {
-        this.students = students;
     }
 }
