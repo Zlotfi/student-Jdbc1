@@ -2,6 +2,7 @@ package com.intern.studentjdbc.domain;
 
 
 @SuppressWarnings("unused")
+//@Entity
 public class Student {
     private Long studentId;
     private String firstName;
