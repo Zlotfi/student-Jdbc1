@@ -4,7 +4,7 @@ package com.intern.studentjdbc.domain;
 @SuppressWarnings("unused")
 //@Entity
 public class Student {
-    private Long studentId;
+    private Long id;
     private String firstName;
     private String lastName;
     private String studentNumber;
@@ -12,8 +12,8 @@ public class Student {
     private String password;
     private Course[] courses;
 
-    public Student(Long studentId, String firstName, String lastName, String studentNumber, String userName, String password, Course[] courses) {
-        this.studentId = studentId;
+    public Student(Long id, String firstName, String lastName, String studentNumber, String userName, String password, Course[] courses) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.studentNumber = studentNumber;
@@ -22,12 +22,12 @@ public class Student {
         this.courses = courses;
     }
 
-    public Long getStudentId() {
-        return studentId;
+    public Long getId() {
+        return id;
     }
 
-    public void setStudentId(Long studentId) {
-        this.studentId = studentId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName() {

@@ -5,22 +5,22 @@ import com.intern.studentjdbc.enumaration.CourseType;
 @SuppressWarnings("unused")
 //@Entity
 public class Course {
-    private Long courseId;
+    private Long id;
     private String courseName;
     private CourseType courseType;
 
-    public Course(Long courseId, String courseName, CourseType courseType) {
-        this.courseId = courseId;
+    public Course(Long id, String courseName, CourseType courseType) {
+        this.id = id;
         this.courseName = courseName;
         this.courseType = courseType;
     }
 
-    public Long getCourseId() {
-        return courseId;
+    public Long getId() {
+        return id;
     }
 
-    public void setCourseId(Long courseId) {
-        this.courseId = courseId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getCourseName() {
