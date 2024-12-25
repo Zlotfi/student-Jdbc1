@@ -9,14 +9,16 @@ public class Student {
     private String studentNumber;
     private String userName;
     private String password;
+    private Course[] courses;
 
-    public Student(Long studentId, String firstName, String lastName, String studentNumber, String userName, String password) {
+    public Student(Long studentId, String firstName, String lastName, String studentNumber, String userName, String password, Course[] courses) {
         this.studentId = studentId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.studentNumber = studentNumber;
         this.userName = userName;
         this.password = password;
+        this.courses = courses;
     }
 
     public Long getStudentId() {
@@ -65,5 +67,13 @@ public class Student {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Course[] getCourses() {
+        return courses;
+    }
+
+    public void setCourses(Course[] courses) {
+        this.courses = courses;
     }
 }
