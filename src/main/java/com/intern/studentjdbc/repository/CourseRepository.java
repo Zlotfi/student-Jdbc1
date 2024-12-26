@@ -6,4 +6,6 @@ import com.intern.studentjdbc.domain.Course;
 import javax.management.relation.Role;
 
 public interface CourseRepository extends BaseEntityRepository {
+
+    Course findByName(String courseName);
 }
