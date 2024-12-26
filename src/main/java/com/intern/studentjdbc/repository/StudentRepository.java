@@ -10,5 +10,4 @@ public interface StudentRepository extends BaseEntityRepository {
     Student findByUserName(String userName);
     boolean existsByUserName(String userName);
     boolean existsByStudentNumber(String studentNumber);
-    Student[] findAllByFirstNameAndLastName(String firstName, String lastName);
 }
