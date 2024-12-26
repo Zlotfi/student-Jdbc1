@@ -1,26 +1,17 @@
 package com.intern.studentjdbc.domain;
 
+import com.intern.studentjdbc.base.domain.Entity;
 import com.intern.studentjdbc.enumaration.CourseType;
 
 @SuppressWarnings("unused")
 //@Entity
-public class Course {
-    private Long id;
+public class Course extends Entity{
     private String courseName;
     private CourseType courseType;
 
-    public Course(Long id, String courseName, CourseType courseType) {
-        this.id = id;
+    public Course(String courseName, CourseType courseType) {
         this.courseName = courseName;
         this.courseType = courseType;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getCourseName() {

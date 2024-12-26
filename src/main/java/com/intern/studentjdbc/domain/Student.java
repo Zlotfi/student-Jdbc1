@@ -1,10 +1,11 @@
 package com.intern.studentjdbc.domain;
 
 
+import com.intern.studentjdbc.base.domain.Entity;
+
 @SuppressWarnings("unused")
 //@Entity
-public class Student {
-    private Long id;
+public class Student extends Entity {
     private String firstName;
     private String lastName;
     private String studentNumber;
@@ -12,22 +13,13 @@ public class Student {
     private String password;
     private Course[] courses;
 
-    public Student(Long id, String firstName, String lastName, String studentNumber, String userName, String password, Course[] courses) {
-        this.id = id;
+    public Student(String firstName, String lastName, String studentNumber, String userName, String password, Course[] courses) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.studentNumber = studentNumber;
         this.userName = userName;
         this.password = password;
         this.courses = courses;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getFirstName() {
